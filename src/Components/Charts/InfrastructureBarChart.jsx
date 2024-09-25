@@ -37,7 +37,7 @@ const InfrastructureAnalysisDashboard = ({ data, comparisonData }) => {
     return {
       absolute: gap,
       percentage: percentageMet.toFixed(2)
-    };
+    };1
   };
 
   const hospitalGap = calculateGap(hospitals, Math.ceil(totalPopulation / 100000));

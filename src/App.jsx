@@ -26,12 +26,19 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1 style={{ textAlign: 'center', color: 'green' }}>OYO STATE INFRASTRUCTURE MAP</h1>
+       <header className="bg-white shadow-sm py-4">
+      <div className="container d-flex justify-content-between align-items-center">
+        <div>
+          <h1 className="mb-0 text-success font-weight-bold">OYO STATE INFRASTRUCTURE MAP</h1>
+          <p className="mb-0 text-muted">Visualize and analyze state infrastructure data</p>
+        </div>
+      </div>
+    </header>
 
       <div className="container-fluid mt-4">
         <div className="row">
           <div className="col-lg-8 mb-4">
-            <div className="card shadow">
+            <div className="card">
               <div className="card-body p-0">
                 <MapComponent
                   mapCenter={mapCenter}
@@ -41,7 +48,7 @@ const App = () => {
                   setMapZoom={setMapZoom}
                 />
               </div>
-              <div className="card-footer bg-white border-top-0">
+              <div className="card-footer border-top-0">
                 <ButtonGroup
                   activeLayer={activeLayer}
                   setActiveLayer={setActiveLayer}
